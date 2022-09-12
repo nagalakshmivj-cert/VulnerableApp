@@ -9,4 +9,6 @@ jobs:
     steps:
       - uses: AppThreat/sast-scan-action@master
         with:
-          type: "php"
+          type: "python"
+        env:
+          SCAN_DEBUG_MODE: debug
