@@ -1,0 +1,9 @@
+- name: sast-scan
+- uses: AppThreat/sast-scan-action@master
+  with:
+    type: "python"
+
+- uses: actions/upload-artifact@v1
+  with:
+    name: reports
+    path: reports
