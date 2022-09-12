@@ -12,3 +12,5 @@ jobs:
           type: "python"
         env:
           SCAN_DEBUG_MODE: debug
+          VDB_HOME: ${{ github.workspace }}/db
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
